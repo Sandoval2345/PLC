@@ -180,7 +180,7 @@ MinHygro = df["Hygro/Thermo;temperature [A]"].min()
 MinBar = df["Barometro;air_pressure [mbar]"].min()
 MinHum = df["Humidity;voltage [% rel]"].min()
 #print(MediaAT104," ",MediaAT100," ",MediaAT90," ",MediaAt30," ",MediaVel80," ",MediaVel40)
-
+#hola mundo
 
 #df.to_csv(r'MedidasPLC2.csv',sep =";",index=False, header=True)
 print("listo")
