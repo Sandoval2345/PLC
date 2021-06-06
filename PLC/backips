@@ -1,0 +1,42 @@
+if(str(df.loc[i,"Anemo Top 104;wind_speed [m/s]"])=="No"):
+        list_of_index.append(i)
+    if(str(df.loc[i,"Anemo Top 100;wind_speed [m/s]"])=="No"):
+        list_of_index.append(i)   
+    if(str(df.loc[i,"Anemo Top 90;wind_speed [m/s]"])=="No"):
+        list_of_index.append(i) 
+    if(str(df.loc[i,"Anemo Top 60;wind_speed [m/s]"])=="No"):
+        list_of_index.append(i)
+    if(str(df.loc[i,"Anemo Top 30;wind_speed [m/s]"])=="No"):
+        list_of_index.append(i)
+    if(str(df.loc[i,"Veleta 80;wind_direction [Â°]"])=="No"):
+        list_of_index.append(i)
+    if(str(df.loc[i,"Veleta 40;wind_direction [Â°]"])=="No"):
+        list_of_index.append(i)  
+    if(str(df.loc[i,"Hygro/Thermo;temperature [Â°C]"])=="No"):
+        list_of_index.append(i)
+    if(str(df.loc[i,"Barometro;air_pressure [mbar]"])=="No"):
+        list_of_index.append(i)   
+    if(str(df.loc[i,"Humidity;voltage [% rel]"])=="No"):
+        list_of_index.append(i)   
+    if(str(df.loc[i,"A1"])=="No"):
+        list_of_index.append(i)   
+    if(str(df.loc[i,"A2"])=="No"):
+        list_of_index.append(i)   
+    if(str(df.loc[i,"A3"])=="No"):
+        list_of_index.append(i)   
+    if(str(df.loc[i,"C1"])=="No"):
+        list_of_index.append(i)  
+    if(str(df.loc[i,"C2"])=="No"):
+        list_of_index.append(i)  
+    if(str(df.loc[i,"C3"])=="No"):
+        list_of_index.append(i)  
+    if(str(df.loc[i,"C4"])=="No"):
+        list_of_index.append(i) 
+    if(str(df.loc[i,"C5"])=="No"):
+        list_of_index.append(i)   
+    if(str(df.loc[i,"D1"])=="No"):
+        list_of_index.append(i)  
+    if(str(df.loc[i,"D2"])=="No"):
+        list_of_index.append(i)  
+    if(str(df.loc[i,"V"])=="No"):
+        list_of_index.append(i) 
