@@ -133,54 +133,59 @@ for i in df.index:
 #cantidad de filas del csv
 CantElementos= len(df.index)
 
-#MEDIAS
-MediaAT104 = sumAT104/CantElementos
-MediaAT100 = sumAT100/CantElementos
-MediaAT90 = sumAT90/CantElementos
-MediaAt30 = sumAT30/CantElementos
-MediaVel80 = sumVel80/CantElementos
-MediaVel40 = sumVel40/CantElementos
-MediaHygro = sumHygro/CantElementos
-MediaBar = sumBar/CantElementos
-MediaHum = sumHum/CantElementos
+def ejecutarScript():
+    #MEDIAS
+    MediaAT104 = sumAT104/CantElementos
+    MediaAT100 = sumAT100/CantElementos
+    MediaAT90 = sumAT90/CantElementos
+    MediaAt30 = sumAT30/CantElementos
+    MediaVel80 = sumVel80/CantElementos
+    MediaVel40 = sumVel40/CantElementos
+    MediaHygro = sumHygro/CantElementos
+    MediaBar = sumBar/CantElementos
+    MediaHum = sumHum/CantElementos
 
-#DESVIACION ESTANDAR
-DesvAT104 = df["Anemo Top 104;wind_speed [m/s]"].std()
-DesvAT100 = df["Anemo 100;wind_speed [m/s]"].std()
-DesvAT90 = df["Anemo 90;wind_speed [m/s]"].std()
-DesvAT60 = df["Anemo 60;wind_speed [m/s]"].std()
-DesvAT30 = df["Anemo 30;wind_speed [m/s]"].std()
-DesvVel80 = df["Veleta 80;wind_direction [A]"].std()
-DesvVel40 = df["Veleta 40;wind_direction [A]"].std()
-DesvHygro = df["Hygro/Thermo;temperature [A]"].std()
-DesvBar = df["Barometro;air_pressure [mbar]"].std()
-DesvHum = df["Humidity;voltage [% rel]"].std()
+    #DESVIACION ESTANDAR
+    DesvAT104 = df["Anemo Top 104;wind_speed [m/s]"].std()
+    DesvAT100 = df["Anemo 100;wind_speed [m/s]"].std()
+    DesvAT90 = df["Anemo 90;wind_speed [m/s]"].std()
+    DesvAT60 = df["Anemo 60;wind_speed [m/s]"].std()
+    DesvAT30 = df["Anemo 30;wind_speed [m/s]"].std()
+    DesvVel80 = df["Veleta 80;wind_direction [A]"].std()
+    DesvVel40 = df["Veleta 40;wind_direction [A]"].std()
+    DesvHygro = df["Hygro/Thermo;temperature [A]"].std()
+    DesvBar = df["Barometro;air_pressure [mbar]"].std()
+    DesvHum = df["Humidity;voltage [% rel]"].std()
 
-#MAXIMOS 
-MaxAT104 = df["Anemo Top 104;wind_speed [m/s]"].max()
-MaxAT100 = df["Anemo 100;wind_speed [m/s]"].max()
-MaxAT90 = df["Anemo 90;wind_speed [m/s]"].max()
-MaxAT60 = df["Anemo 60;wind_speed [m/s]"].max()
-MaxAT30 = df["Anemo 30;wind_speed [m/s]"].max()
-MaxVel80 = df["Veleta 80;wind_direction [A]"].max()
-MaxVel40 = df["Veleta 40;wind_direction [A]"].max()
-MaxHygro = df["Hygro/Thermo;temperature [A]"].max()
-MaxBar = df["Barometro;air_pressure [mbar]"].max()
-MaxHum = df["Humidity;voltage [% rel]"].max()
+    #MAXIMOS 
+    MaxAT104 = df["Anemo Top 104;wind_speed [m/s]"].max()
+    MaxAT100 = df["Anemo 100;wind_speed [m/s]"].max()
+    MaxAT90 = df["Anemo 90;wind_speed [m/s]"].max()
+    MaxAT60 = df["Anemo 60;wind_speed [m/s]"].max()
+    MaxAT30 = df["Anemo 30;wind_speed [m/s]"].max()
+    MaxVel80 = df["Veleta 80;wind_direction [A]"].max()
+    MaxVel40 = df["Veleta 40;wind_direction [A]"].max()
+    MaxHygro = df["Hygro/Thermo;temperature [A]"].max()
+    MaxBar = df["Barometro;air_pressure [mbar]"].max()
+    MaxHum = df["Humidity;voltage [% rel]"].max()
 
-#MINIMOS
-MinAT104 = df["Anemo Top 104;wind_speed [m/s]"].min()
-MinAT100 = df["Anemo 100;wind_speed [m/s]"].min()
-MinAT90 = df["Anemo 90;wind_speed [m/s]"].min()
-MinAT60 = df["Anemo 60;wind_speed [m/s]"].min()
-MinAT30 = df["Anemo 30;wind_speed [m/s]"].min()
-MinVel80 = df["Veleta 80;wind_direction [A]"].min()
-MinVel40 = df["Veleta 40;wind_direction [A]"].min()
-MinHygro = df["Hygro/Thermo;temperature [A]"].min()
-MinBar = df["Barometro;air_pressure [mbar]"].min()
-MinHum = df["Humidity;voltage [% rel]"].min()
-#print(MediaAT104," ",MediaAT100," ",MediaAT90," ",MediaAt30," ",MediaVel80," ",MediaVel40)
-#hola mundo
+    #MINIMOS
+    MinAT104 = df["Anemo Top 104;wind_speed [m/s]"].min()
+    MinAT100 = df["Anemo 100;wind_speed [m/s]"].min()
+    MinAT90 = df["Anemo 90;wind_speed [m/s]"].min()
+    MinAT60 = df["Anemo 60;wind_speed [m/s]"].min()
+    MinAT30 = df["Anemo 30;wind_speed [m/s]"].min()
+    MinVel80 = df["Veleta 80;wind_direction [A]"].min()
+    MinVel40 = df["Veleta 40;wind_direction [A]"].min()
+    MinHygro = df["Hygro/Thermo;temperature [A]"].min()
+    MinBar = df["Barometro;air_pressure [mbar]"].min()
+    MinHum = df["Humidity;voltage [% rel]"].min()
+    #print(MediaAT104," ",MediaAT100," ",MediaAT90," ",MediaAt30," ",MediaVel80," ",MediaVel40)
+    
+    print("Actualizado")
+    time.sleep(600) #Se actualiza cada 10 minutos 
 
+while True:
+    ejecutarScript()
 #df.to_csv(r'MedidasPLC2.csv',sep =";",index=False, header=True)
 print("listo")
